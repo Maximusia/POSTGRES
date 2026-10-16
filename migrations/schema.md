@@ -23,3 +23,11 @@ COMMANDE(**id_commande**, #id_plat, quantite, numero_commande, date_commande)
 
 ## Piège
 - Je place la quantité dans la table commande car un commande peut contenir plusieur plats
+
+# Etape 4:
+### Les habitués
+CLIENTS(**id_client**, nom_client)
+COMMANDE(**id_commande**, #id_plat, #id_client, quantite, numero_commande, date_commande)
+
+## Piège:
+- Ma clé étrangére peut être null car il existe des clients de passages. On utilise LEFT JOIN entre le client et la commande pour ne perdre aucune commande
