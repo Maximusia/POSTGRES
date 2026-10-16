@@ -16,3 +16,10 @@ ALTER COLUMN categorie_plat SET NOT NULL;
 
 ## Piège
 - Parce que si on n'ajoute simplement une colonne **categorie VARCHAR(50)** l'utilisateur pourrait tous faire une faute de frappe ce qui ne facilite pas la filtrage des plats par catégories. Par exemple l'utisateur pourrait écrire malagasy tout simplement au mieu de Plat malagasy.
+
+# Etape 3:
+### Les commandes
+COMMANDE(**id_commande**, #id_plat, quantite, numero_commande, date_commande)
+
+## Piège
+- Je place la quantité dans la table commande car un commande peut contenir plusieur plats
